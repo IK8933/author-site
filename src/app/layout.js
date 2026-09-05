@@ -4,8 +4,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "Ian Kessack — Author",
-  description: "Books, summaries, and updates.",
+  title: "The Scholarly Quill | Dr. Marti Kessack",
+  description:
+    "Books, essays, reflections, and updates from Dr. Marti Kessack.",
 };
 
 export default function RootLayout({ children }) {
