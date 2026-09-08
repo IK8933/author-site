@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+/*
 const books = [
   {
     title: "Example Book Title",
@@ -16,12 +17,15 @@ const books = [
     status: "Coming soon",
   },
 ];
-
+*/
+const books = [];
 export default function BooksPage() {
   return (
     <>
-      <h1>Books</h1>
-      <p className="muted">Short summaries and links to purchase.</p>
+    <h1>Books</h1>
+<p className="muted">
+  Books and upcoming works by Dr. Marti Kessack will be featured here. Check back soon for future releases.
+</p>
 
       <hr />
 

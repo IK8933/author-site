@@ -12,7 +12,9 @@ export default function Header() {
         </div>
 
         <nav style={{ display: "flex", gap: 14, flexWrap: "wrap", fontSize: 14 }}>
+          <Link href="/">Home</Link>
           <Link href="/books">Books</Link>
+          <Link href="/blog">Blog</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
         </nav>
@@ -20,3 +22,5 @@ export default function Header() {
     </header>
   );
 }
+
+
