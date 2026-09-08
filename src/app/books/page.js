@@ -18,16 +18,20 @@ const books = [
   },
 ];
 */
+
 const books = [];
+
 export default function BooksPage() {
   return (
     <>
-    <h1>Books</h1>
-<p className="muted">
-  Books and upcoming works by Dr. Marti Kessack will be featured here. Check back soon for future releases.
-</p>
+      <h1 className="page-title">Books</h1>
 
-      <hr />
+      <p className="page-intro">
+        Books and upcoming works by Dr. Marti Kessack will be featured here.
+        Check back soon for future releases.
+      </p>
+
+      <div className="page-divider" />
 
       <div style={{ display: "grid", gap: 16 }}>
         {books.map((b) => (
@@ -35,8 +39,8 @@ export default function BooksPage() {
             key={b.slug}
             style={{
               padding: 16,
-              border: "1px solid rgba(255,255,255,0.12)",
-              borderRadius: 12,
+              border: "1px solid rgba(102, 83, 111, 0.2)",
+              borderRadius: 8,
             }}
           >
             <div
@@ -51,12 +55,13 @@ export default function BooksPage() {
               <h2 style={{ margin: 0 }}>
                 <Link href={`/books/${b.slug}`}>{b.title}</Link>
               </h2>
-              <span className="muted" style={{ fontSize: 13 }}>
+
+              <span style={{ fontSize: 13, color: "#66536f" }}>
                 {b.status}
               </span>
             </div>
 
-            <p className="muted" style={{ marginTop: 10 }}>
+            <p style={{ marginTop: 10, lineHeight: 1.6 }}>
               {b.summary}
             </p>
 

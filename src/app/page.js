@@ -5,10 +5,11 @@ export default function Home() {
         <p
           style={{
             margin: 0,
-            fontSize: 14,
-            letterSpacing: "0.08em",
+            fontSize: 13,
+            letterSpacing: "0.14em",
             textTransform: "uppercase",
-            opacity: 0.7,
+            color: "#66536f",
+            fontWeight: 600,
           }}
         >
           Welcome to
@@ -20,6 +21,9 @@ export default function Home() {
             marginBottom: 16,
             fontSize: "clamp(2.2rem, 5vw, 3.5rem)",
             lineHeight: 1.1,
+            fontFamily: '"Palatino Linotype", Palatino, "Book Antiqua", serif',
+            fontWeight: 400,
+            letterSpacing: "0.02em",
           }}
         >
           The Scholarly Quill
@@ -39,7 +43,9 @@ export default function Home() {
       </section>
 
       <section style={{ padding: "16px 0 24px" }}>
-        <h2>What You’ll Find Here</h2>
+        <h2 className="section-heading">
+          What You’ll Find Here
+        </h2>
         <p style={{ maxWidth: 700, lineHeight: 1.7 }}>
           This site is designed to share meaningful writing, personal journeys,
           and thoughtful ideas. Visitors will be able to explore books, read
@@ -49,7 +55,9 @@ export default function Home() {
       </section>
 
       <section style={{ padding: "16px 0 24px" }}>
-        <h2>Explore</h2>
+        <h2 className="section-heading">
+          Explore
+        </h2>
         <ul style={{ lineHeight: 1.9, paddingLeft: 20 }}>
           <li>Browse published and upcoming books</li>
           <li>Read blog posts and reflections</li>

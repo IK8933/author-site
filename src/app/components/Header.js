@@ -6,18 +6,45 @@ export default function Header() {
       <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 16, padding: "18px 0" }}>
         <div>
           <Link href="/" style={{ textDecoration: "none", color: "inherit" }}>
-            <div style={{ fontSize: 22, letterSpacing: 0.2 }}>Dr. Marti Kessack</div>
+            <div
+              style={{
+                fontFamily: '"Palatino Linotype", Palatino, "Book Antiqua", serif',
+                fontSize: 24,
+                fontWeight: 400,
+                letterSpacing: "0.02em",
+                color: "#3b303f",
+              }}
+            >
+              Dr. Marti Kessack
+            </div>
+
           </Link>
-          <div style={{ fontSize: 14, opacity: 0.75 }}>Exploration • Ideas • Writing</div>
+          <div
+            style={{
+              fontSize: 14,
+              letterSpacing: "0.04em",
+              color: "#66536f",
+              marginTop: 3,
+            }}
+          >
+            Exploration • Ideas • Writing
+          </div>
         </div>
 
-        <nav style={{ display: "flex", gap: 14, flexWrap: "wrap", fontSize: 14 }}>
-          <Link href="/">Home</Link>
-          <Link href="/books">Books</Link>
-          <Link href="/blog">Blog</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
+        <nav
+  style={{
+    display: "flex",
+    gap: 18,
+    flexWrap: "wrap",
+    fontSize: 14,
+  }}
+>
+  <Link href="/" className="nav-link">Home</Link>
+  <Link href="/books" className="nav-link">Books</Link>
+  <Link href="/blog" className="nav-link">Blog</Link>
+  <Link href="/about" className="nav-link">About</Link>
+  <Link href="/contact" className="nav-link">Contact</Link>
+</nav>
       </div>
     </header>
   );

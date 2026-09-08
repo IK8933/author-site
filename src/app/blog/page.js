@@ -1,10 +1,14 @@
 export default function Blog() {
   return (
-    <section>
-      <h1>Blog</h1>
-      <p>
-        Essays, reflections, and updates from Dr. Marti Kessack.
+    <>
+      <h1 className="page-title">Blog</h1>
+
+      <p className="page-intro">
+        Essays, reflections, and updates from Dr. Marti Kessack will be featured
+        here. Check back soon for new posts.
       </p>
-    </section>
+
+      <div className="page-divider" />
+    </>
   );
 }
